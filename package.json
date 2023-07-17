@@ -1,0 +1,19 @@
+{
+  "name": "api-rest-performance-y-usabilidad",
+  "version": "1.0.0",
+  "description": "Consumo de API REST con JavaScript. Optimizar el tiempo de carga. Crea loading skeletons para mejorar la UX de la aplicación, implementación de scroll infinito y uso Local Storage para aumentar la velocidad de respuesta de la aplicación",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Madays/API-REST-Performance-y-Usabilidad.git"
+  },
+  "author": "Maday",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Madays/API-REST-Performance-y-Usabilidad/issues"
+  },
+  "homepage": "https://github.com/Madays/API-REST-Performance-y-Usabilidad#readme"
+}
