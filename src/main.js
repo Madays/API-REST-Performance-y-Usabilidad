@@ -34,6 +34,13 @@ function createMovies(movies, container, lazyLoad = false) {
         movieImg.classList.add('movie-img')
         movieImg.setAttribute('alt', movie.title)
         movieImg.setAttribute(lazyLoad ? 'data-img' : 'src', 'https://image.tmdb.org/t/p/w300/' + movie.poster_path)
+        movieImg.addEventListener('error', () => {
+            movieImg.setAttribute(
+                'src',
+                'https://static.platzi.com/static/images/error/img404.png'
+            )
+        })
+
         if(lazyLoad){
             lazyLoader.observe(movieImg)
         }
@@ -98,6 +105,7 @@ async function getMoviesBySearch(query) {
         }
     })
     const movies = data.results
+    console.log('data',data)
 
     createMovies(movies, genericSection, true)
 }
